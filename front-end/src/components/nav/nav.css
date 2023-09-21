@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+:root{
+    --main-bg: #12486B;
+    --second-bg: #419197;
+    --third-bg: #78D6C6;
+    --fourth-bg: #F5FCCD;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px var(--second-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5% 20px;
+    background-color: var(--third-bg);
+    
+}
+.nav_links{
+ display: flex;
+ gap: 1.2rem;
+}
+.nav_links li a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.nav_logo{
+    font-size: 2rem;
+    margin-right: 9rem;
+   
+}
+.nav_logo h1 a{
+    color: #fff;
+}
+.action-btn{
+    display: flex;
+    gap: 3rem;
+}
+.cart-btn{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: .4rem 1rem;
+    font-size: 20px;
+}
+.login-btn{
+    border-radius: 12px;
+    background-color: chartreuse;
+    border: 2px solid chartreuse;
+    padding: .4rem 1.5rem;
+    cursor: pointer;
+}
+.logout-btn{
+    border-radius: 12px;
+    background-color: rgb(230, 31, 25);
+    border: none;
+    color: #ffff;
+    padding: .4rem 1rem;
+    cursor: pointer;
+}
+.logout-btn:hover{
+    transform: scale(1.045);
+    transition: all .50s ease-in-out;
+    box-shadow: 0 0 10px red;
+}
+.login-btn:hover{
+    
+    box-shadow: 0 0 10px green;
+    transform: scale(1.045);
+    transition: all .50s ease-in-out;
+}
+/*************************************************************************   header section    *******************************************************************/
+
+/**************************************************** MEDIA QUERY ***********************************************************************************************/
