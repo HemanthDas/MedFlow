@@ -30,3 +30,16 @@
     box-shadow: 0 0 20px #000;
     background-color: #fff;
 }
+
+@media(max-width: 700px){
+    .promote-container{
+        height: fit-content;
+    }
+    .promote-container h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .promote-container li img{
+        margin-bottom: 2rem;
+    }
+}

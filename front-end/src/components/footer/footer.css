@@ -11,7 +11,7 @@
     padding: 20px 10% 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: rgb(199, 199, 199);
+    background: linear-gradient(45deg,#78D6C6, #12486B, #419197);
     gap: 1.2rem;
     
  }
@@ -23,19 +23,20 @@
     align-items: center;
  }
  .ul-1 h1 ,.ul-2 h1{
+   color: #fff;
     font-size: 1.5rem;
     text-decoration: underline;
     text-underline-offset: .4rem;
-    text-decoration-color: #000;
+    text-decoration-color: #fff;
     margin-bottom: 1rem;
  }
  .ul-1 li a{
     font-size: .8rem;
-    color: #000;
+    color: #fff;
  }
  .ul-2 li a{
     font-size: .8rem;
-    color: #000;
+    color: #fff;
  }
  .box-2{
     width: 100%;
@@ -49,7 +50,7 @@
     text-align: center;
     font-weight: 600;
     height: 5vh;
-    background: rgb(199, 199, 199);
+    background: linear-gradient(45deg,#78D6C6, #12486B, #419197);
  }
  .download-app button{
     padding: .3rem .6rem;
@@ -60,17 +61,32 @@
  }
  .download-app button a{
     font-size: 1.4rem;
-    color: #000;
+    color: #fff;
  }
  .user-policies, .terms-btn, .user-btn{
      padding: .6rem 1rem;
      border: none;
      border-radius: 20px;
+     
+ }
+ .user-policies{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+ }
+ .user-btn a, .terms-btn a{
+   color: #000;
+   font-weight: 600;
  }
  .user-btn {
     margin-left: 1rem;
  }
- @media(max-width: 1024px){
+.download-app h1{
+   color: #fff;
+   
+}
+ @media(max-width: 700px){
     .footer_container{
         margin: auto;
         display: grid;
@@ -84,5 +100,14 @@
     .box-1, .box-2{
         margin: auto;
         width: 100%;
+    }
+    .user-policies{
+      flex-direction: column;
+      gap: 1.2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .user-btn{
+      margin: 0;
     }
  }

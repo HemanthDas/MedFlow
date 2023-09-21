@@ -16,6 +16,7 @@ const Footer = () => {
                         <li><a href="/">Book a Lab test</a></li>
                         <li><a href="/">COVID-19</a></li>
                         <li><a href="/">Surgery Care</a></li>
+                        <li><a href="/">24/7 support</a></li>
                     </ul>
                 </article>
                 <article className="ul-2">
@@ -39,14 +40,12 @@ const Footer = () => {
             </div>
             <div className="user-policies">
                 <button className='terms-btn'><a href="/">Terms of use</a></button>
-                <button className='user-btn'><a href="/">User Poilicy</a></button>
+                <button className='user-btn'><a href="/">User Policy</a></button>
             </div>
             </div>
             
         </section>
-        <div className="copyright">
-        <p>&copy; Copyright 2023. All Rights Reserved.</p>
-        </div>
+        
     </div>
   )
 }
