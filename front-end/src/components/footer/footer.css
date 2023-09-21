@@ -5,70 +5,84 @@
     list-style: none;
 }
 
-.footer_container{
+ .footer_container{
     width: 100%;
-    height: 20vh;
-    background: grey;
+    height: 40vh;
+    padding: 20px 10% 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(199, 199, 199);
+    gap: 1.2rem;
+    
+ }
+ .box-1{
+    width: 100%;
+    background-color: transparent;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    color: #fff;
-}
-.box-container-1{
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-}
-
-.box-container-1 .services li a {
-    text-align: center;
-    color: #fff;
-}
-.box-container-2{
+ }
+ .ul-1 h1 ,.ul-2 h1{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: .4rem;
+    text-decoration-color: #000;
+    margin-bottom: 1rem;
+ }
+ .ul-1 li a{
+    font-size: .8rem;
+    color: #000;
+ }
+ .ul-2 li a{
+    font-size: .8rem;
+    color: #000;
+ }
+ .box-2{
+    width: 100%;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-}
-.box-1 button{
-    padding: .3rem .6rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 50%;
-    border: none;
-   
-}
-.box-1 button a{
+ }
+ .copyright p{
     text-align: center;
-    font-size: 1.2rem;
-    color: #000;
-}
-.box-2 input{
-    padding: .6rem 1.2rem;
-    border: 2px solid #fff;
-    background: transparent;
-    border-radius: 5px;
-    margin-bottom: .4rem;
-}
-.box-2 textarea{
-    padding: .6rem 1.7rem;
-    border: 2px solid #fff;
-    background: transparent;
-    border-radius: 5px;
-}
-.box-2 input::placeholder , .box-2 textarea::placeholder{
-    color: #fff;
-}
-.submit-btn{
-    padding: .3rem 1rem;
-    border: none;
-
-}
-
-.copyright{
-    
+    font-weight: 600;
     height: 5vh;
-    background-color: grey;
-    text-align: center;
-}
+    background: rgb(199, 199, 199);
+ }
+ .download-app button{
+    padding: .3rem .6rem;
+    background-color: transparent;
+    border: none;
+    margin-left: 2rem;
+   
+ }
+ .download-app button a{
+    font-size: 1.4rem;
+    color: #000;
+ }
+ .user-policies, .terms-btn, .user-btn{
+     padding: .6rem 1rem;
+     border: none;
+     border-radius: 20px;
+ }
+ .user-btn {
+    margin-left: 1rem;
+ }
+ @media(max-width: 1024px){
+    .footer_container{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.2rem;
+        height: fit-content;
+    }
+    .copyright p{
+        display: none;
+    } 
+    .box-1, .box-2{
+        margin: auto;
+        width: 100%;
+    }
+ }

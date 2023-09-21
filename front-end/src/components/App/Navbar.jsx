@@ -53,8 +53,14 @@ const Navbar = () => {
                 </div>
                 <br />
                 <div className="buttons">
-                <button className='book-btn'><a href="/">Book Appointment</a></button>
-                <button className='emergency-btn'><a href="/">Emergency</a></button>
+                {
+                    isAuthenticated ?(
+                        <button className='book-btn'><a href="/">Book Appointment</a></button>
+                    ):(
+                        
+                        <button className='emergency-btn'><a href="/">Emergency</a></button>
+                    )
+                }
                 </div>
             </div>
             <div className="image-container">

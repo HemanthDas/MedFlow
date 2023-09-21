@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/App/Navbar'
 import Doctor from './components/doctor/Doctor'
 import Footer from './components/footer/Footer'
+import Promote from './components/promote/Promote'
 
 
 
@@ -15,6 +16,7 @@ function App() {
    <div>
       <Navbar />
       <Doctor />
+      <Promote />
       <Footer />
    </div>
   )

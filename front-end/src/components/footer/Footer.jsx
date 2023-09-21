@@ -1,57 +1,48 @@
 import React from 'react'
 import '../footer/footer.css'
-import{AiFillGithub} from 'react-icons/ai';
-import{BsFacebook} from 'react-icons/bs';
-import{BsWhatsapp} from 'react-icons/bs';
+import{AiFillApple} from 'react-icons/ai';
+import{BsGooglePlay} from 'react-icons/bs';
 const Footer = () => {
   return (
     <div>
-        <section className="container footer_container">
-            <div className="box-container-1">
-                <div className="box-1">
-                <article className="services">
-                    <h1>Our Services</h1>
+        <section className="footer_container">
+            <div className="box-1">
+                <article className="ul-1">
+                    <h1>Health</h1>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Services</a></li>
-                        <li><a href="/">Doctors</a></li>
-                        <li><a href="/">Partners</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><a href="/">MedFlow Pro</a></li>
+                        <li><a href="/">Book Medicine</a></li>
+                        <li><a href="/">Doctor Consult</a></li>
+                        <li><a href="/">Book a Lab test</a></li>
+                        <li><a href="/">COVID-19</a></li>
+                        <li><a href="/">Surgery Care</a></li>
                     </ul>
                 </article>
-                </div>
-
-                <div className="box-2">
-                <article className="services">
-                    <h1>Our Milestones</h1>
+                <article className="ul-2">
+                    <h1>About</h1>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Services</a></li>
-                        <li><a href="/">Doctors</a></li>
-                        <li><a href="/">Partners</a></li>
+                        <li><a href="/">Overview</a></li>
                         <li><a href="/">Contact</a></li>
+                        <li><a href="/">Testimonials</a></li>
+                        <li><a href="/">Security</a></li>
+                        <li><a href="/">Cart</a></li>
+                        <li><a href="/">FAQ's</a></li>
+                        <li><a href="/">MedFlow Buddies</a></li>
                     </ul>
                 </article>
-                
-                </div>
             </div>
-            <div className="box-container-2">
-
-                <div className="box-1">
-                <button><a href="/"><AiFillGithub /></a></button>
-                <button><a href="/"><BsFacebook /></a></button>
-                <button><a href="/"><BsWhatsapp /></a></button>
-                </div>
-
-                <div className="box-2">
-                    <form action="">
-                        <input type="email" placeholder='enter mail' /> <br />
-                        <textarea rows="2" placeholder='message'></textarea> <br />
-                        <button className='submit-btn' type='submit'>Send</button>
-                    </form>
-                </div>
+            <div className="box-2">
+            <div className="download-app">
+            <h1>Download App</h1>
+            <button><a href="/"><BsGooglePlay /></a></button>
+            <button><a href="/"><AiFillApple /></a></button>
             </div>
-                
+            <div className="user-policies">
+                <button className='terms-btn'><a href="/">Terms of use</a></button>
+                <button className='user-btn'><a href="/">User Poilicy</a></button>
+            </div>
+            </div>
+            
         </section>
         <div className="copyright">
         <p>&copy; Copyright 2023. All Rights Reserved.</p>

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.promote-container{
+    padding: 30px 10% 20px;
+    width: 100%;
+    height: 50vh;
+    background: #12486B;
+}
+.promote-container h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.promote-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promote-container li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promote-container li img{
+    padding: 1rem;
+    box-shadow: 0 0 20px #000;
+    background-color: #fff;
+}
