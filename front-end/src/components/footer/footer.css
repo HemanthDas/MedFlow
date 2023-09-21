@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.footer_container{
+    width: 100%;
+    height: 20vh;
+    background: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.box-container-1{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.box-container-1 .services li a {
+    text-align: center;
+    color: #fff;
+}
+.box-container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box-1 button{
+    padding: .3rem .6rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: none;
+   
+}
+.box-1 button a{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+.box-2 input{
+    padding: .6rem 1.2rem;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom: .4rem;
+}
+.box-2 textarea{
+    padding: .6rem 1.7rem;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 5px;
+}
+.box-2 input::placeholder , .box-2 textarea::placeholder{
+    color: #fff;
+}
+.submit-btn{
+    padding: .3rem 1rem;
+    border: none;
+
+}
+
+.copyright{
+    
+    height: 5vh;
+    background-color: grey;
+    text-align: center;
+}
