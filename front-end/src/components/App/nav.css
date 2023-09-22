@@ -95,6 +95,9 @@ nav{
     text-underline-offset: 1rem;
     text-decoration-color: var(--third-bg);
 }
+.menu-btn{
+    display: none;
+}
 /*************************************************************************   header section    *******************************************************************/
 header{
     padding: 20px 10% 20px;
@@ -211,5 +214,13 @@ header{
         position: fixed;
         top: 3%;
         right: 25%;
+        display: none ;
+    }
+    .menu-btn {
+        display: block ;
+        
+    }
+    .menu-btn button{
+        padding: 1rem;
     }
 }

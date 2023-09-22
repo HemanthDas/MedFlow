@@ -8,7 +8,6 @@ import Footer from './components/footer/Footer'
 import Promote from './components/promote/Promote'
 
 
-
 function App() {
   const [count, setCount] = useState(0)
 
