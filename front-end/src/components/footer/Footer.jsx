@@ -33,16 +33,27 @@ const Footer = () => {
                 </article>
             </div>
             <div className="box-2">
-            <div className="download-app">
-            <h1>Download App</h1>
-            <button><a href="/"><BsGooglePlay /></a></button>
-            <button><a href="/"><AiFillApple /></a></button>
+              <div className="download-app">
+               <h1>Download App</h1>
+                 <button><a href="/"><i class="ri-google-play-fill"></i></a></button>
+                 <button><a href="/"><i class="ri-apple-fill"></i></a></button>
+              </div>
+
+            <div className="follow-us">
+                <h1>Follow Us</h1>
+                <button><a href="/"><i class="ri-instagram-line"></i></a></button>
+                <button><a href="/"><i class="ri-whatsapp-line"></i></a></button>
+                <button><a href="/"><i class="ri-facebook-fill"></i></a></button>
+                <button><a href="/"><i class="ri-twitter-line"></i></a></button>
+                <button><a href="/"><i class="ri-google-fill"></i></a></button>
             </div>
+
             <div className="user-policies">
                 <button className='terms-btn'><a href="/">Terms of use</a></button>
                 <button className='user-btn'><a href="/">User Policy</a></button>
             </div>
-            </div>
+        </div>
+
             
         </section>
         

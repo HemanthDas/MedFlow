@@ -55,12 +55,14 @@
  .download-app button{
     padding: .3rem .6rem;
     background-color: transparent;
-    border: none;
-    margin-left: 2rem;
-   
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 1.7rem;
+    margin-bottom: 1rem;
+    margin-top: .4rem;
  }
  .download-app button a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #fff;
  }
  .user-policies, .terms-btn, .user-btn{
@@ -85,6 +87,27 @@
 .download-app h1{
    color: #fff;
    
+}
+.follow-us button{
+   padding: .5rem .6rem;
+   margin-right: .4rem;
+   border-radius: 50%;
+   border: 2px solid #ffff;
+   background: none;
+   margin-bottom: 1rem;
+}
+.follow-us h1{
+   text-align: center;
+   color: #fff;
+   margin-bottom: .4rem;
+}
+.follow-us button a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   font-weight: 400;
+   color: #fff;
 }
  @media(max-width: 700px){
     .footer_container{
