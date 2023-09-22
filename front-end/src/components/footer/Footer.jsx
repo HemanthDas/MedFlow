@@ -1,7 +1,6 @@
 import React from 'react'
 import '../footer/footer.css'
-import{AiFillApple} from 'react-icons/ai';
-import{BsGooglePlay} from 'react-icons/bs';
+
 const Footer = () => {
   return (
     <div>
