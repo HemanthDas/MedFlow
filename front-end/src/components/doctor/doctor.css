@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.doctor_container{
+    width: 100%;
+    height: 70vh;
+    background-color: #0c3a59;
+    text-align: center;
+    color: #ffff;
+    padding: 20px 10% 20px;
+}
+.doctor_container h1{
+    font-size: 3rem;
+}
+
+@media(max-width: 700px){
+
+    .doctor_container h1{
+        font-size: 2rem;
+    }
+}
