@@ -1,24 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/App/Navbar'
-import Doctor from './components/doctor/Doctor'
-import Footer from './components/footer/Footer'
-import Promote from './components/promote/Promote'
-
-
+import "./App.css";
+import Navbar from "./components/App/Navbar";
+import Footer from "./components/footer/Footer";
+import { routers } from "./components/router";
+import { ReactLocation, Outlet, Router } from "react-location";
 function App() {
-  const [count, setCount] = useState(0)
-
+  const location = new ReactLocation();
   return (
-   <div>
-      <Navbar />
-      <Doctor />
-      <Promote />
-      <Footer />
-   </div>
-  )
+    <div>
+      <Router location={location} routes={routers}>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
