@@ -2,12 +2,12 @@ import React from "react";
 import "./nav.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-location";
 const Navbar = () => {
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
 
   const { user, isAuthenticated } = useAuth0();
-  console.log(user);
   return (
     <React.Fragment>
       <nav>
@@ -17,9 +17,7 @@ const Navbar = () => {
               Home
             </a>
           </li>
-          <li>
-            <a href="/">Doctors</a>
-          </li>
+          <Link to="/doctors">Doctors</Link>
           <li>
             <a href="/">Partners</a>
           </li>
