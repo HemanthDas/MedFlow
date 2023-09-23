@@ -69,11 +69,8 @@ const Navbar = () => {
                 <img src="https://static.vecteezy.com/system/resources/previews/003/735/113/non_2x/medicine-concept-with-portrait-doctor-character-standing-in-medical-uniform-flat-illustration-for-banner-poster-layout-template-brochure-design-flyer-for-advertising-medical-services-vector.jpg" alt="" />
             </div>
         </section>
-    </header>
-
-
-    {/**************************************************************** DOCTORS SECTION ****************************************************************************************************/}
-   
+    </header>   
+    
     </div>
   )
 }

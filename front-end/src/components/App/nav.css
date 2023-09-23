@@ -214,13 +214,13 @@ header{
         position: fixed;
         top: 3%;
         right: 25%;
-        display: none ;
+        
     }
     .menu-btn {
         display: block ;
         
     }
     .menu-btn button{
-        padding: 1rem;
+        display: none;
     }
 }
