@@ -33,7 +33,9 @@ const Navbar = () => {
             <a href="/">MedFlow</a>
           </h1>
         </div>
-
+        <div className="menu-btn">
+            <button><a href="/"><i class="ri-menu-line"></i></a></button>
+        </div>
         <div className="action-btn">
           <button className="cart-btn">
             <FaShoppingCart />
