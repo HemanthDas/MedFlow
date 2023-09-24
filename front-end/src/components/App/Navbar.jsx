@@ -1,13 +1,10 @@
-import React from "react";
 import "./nav.css";
-import { useAuth0 } from "@auth0/auth0-react";
+import React, { useContext } from "react";
+import { AuthContext } from "../authprovider";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-location";
 const Navbar = () => {
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
-
-  const { user, isAuthenticated } = useAuth0();
+  const { user, isLoggedIn } = useContext(AuthContext);
   return (
     <React.Fragment>
       <nav>
@@ -34,27 +31,32 @@ const Navbar = () => {
           </h1>
         </div>
         <div className="menu-btn">
-            <button><a href="/"><i class="ri-menu-line"></i></a></button>
+          <button>
+            <a href="/">
+              <i className="ri-menu-line"></i>
+            </a>
+          </button>
         </div>
         <div className="action-btn">
           <button className="cart-btn">
             <FaShoppingCart />
           </button>
-          {isAuthenticated && (
+          {isLoggedIn && (
             <img className="user-image" src={user.picture} alt={user.name} />
           )}
 
-          {isAuthenticated ? (
+          {isLoggedIn ? (
             <button
               onClick={() =>
-                logout({ logoutParams: { returnTo: window.location.origin } })
+                // logout({ logoutParams: { returnTo: window.location.origin } })
+                console.log("logout")
               }
               className="logout-btn"
             >
               Log Out
             </button>
           ) : (
-            <button onClick={() => loginWithRedirect()} className="login-btn">
+            <button onClick={() => console.log("login")} className="login-btn">
               Log In
             </button>
           )}
@@ -66,7 +68,7 @@ const Navbar = () => {
             <h1 className="heading-1">Welcome to MedFlow!</h1>
             <br />
             <div className="redirect">
-              {isAuthenticated && (
+              {isLoggedIn && (
                 <p className="text">
                   Hi there... (Mr/Mrs) <small>{user.name}</small>{" "}
                 </p>
@@ -83,7 +85,7 @@ const Navbar = () => {
             </div>
             <br />
             <div className="buttons">
-              {isAuthenticated ? (
+              {isLoggedIn ? (
                 <button className="book-btn">
                   <a href="/">Book Appointment</a>
                 </button>
